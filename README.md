@@ -1,6 +1,6 @@
-# Siemens Teamcenter PLM Enterprise & Siemens NX Automation Suite
+# Siemens NX CAD & Teamcenter PLM Enterprise Automation Suite
 
-A production-grade Python automation framework for **Siemens Teamcenter PLM** (Active Workspace & Web Tier) and **Siemens NX CAD** (NX Open API). This suite automates key engineering, manufacturing (CAPP), change management (EDN/ECN), data synchronization, and automated Siemens NX CAD layer classification operations.
+A production-grade Python automation framework for **Siemens NX CAD** (NX Open API) and **Siemens Teamcenter PLM** (Active Workspace & Web Tier). This suite automates key CAD layer alignment, sketches, surfaces, datums, engineering, manufacturing (CAPP), change management (EDN/ECN), and data synchronization operations.
 
 ---
 
