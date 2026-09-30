@@ -1,0 +1,14 @@
+# NovaLang API & AI Data Pipeline (.nova)
+# Demonstrates HTTP API chaining, AI reasoning, and Exporting
+
+set $endpoint = "https://api.github.com/orgs/novasmart/repos"
+
+http_get $endpoint -> ai "Extract top 3 trending repositories and write release notes summary" -> export "release_notes.json"
+
+set $count = 3
+repeat $count times
+  log "NovaLang system health check iteration..."
+  wait 200ms
+end
+
+log "NovaLang Pipeline executed cleanly!"

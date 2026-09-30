@@ -1,0 +1,18 @@
+# NovaLang Web Scraping & Lead Enrichment Script (.nova)
+# Author: Founder & Creator
+
+set $url = "https://portal.novasmart.io/leads"
+log "Starting NovaLang Scraper on" $url
+
+open $url
+click "#btn-login"
+type "#input-search" "Enterprise Clients"
+click "#btn-search"
+wait 500ms
+
+set $data = extract "table.leads-grid"
+log "Extracted leads dataset via NovaLang!"
+
+http_get "https://api.novasmart.io/enrich" -> ai "Analyze these leads and categorize by revenue potential" -> export "leads_summary.json"
+
+log "NovaLang Automation Completed Successfully!"
