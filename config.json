@@ -1,0 +1,22 @@
+{
+  "teamcenter": {
+    "host_url": "http://your-tc-server:8080/tc",
+    "fms_url": "http://your-tc-server:8080/fms",
+    "default_user": "infodba",
+    "group": "",
+    "role": ""
+  },
+  "edn_settings": {
+    "default_relation": "CMHasSolutionItem",
+    "impacted_relation": "CMHasImpactedItem",
+    "problem_relation": "CMHasProblemItem"
+  },
+  "capp_settings": {
+    "default_time_unit": "sec",
+    "default_frequency": 1.0
+  },
+  "logging": {
+    "log_file": "teamcenter_automation.log",
+    "level": "INFO"
+  }
+}
